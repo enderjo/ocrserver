@@ -4,6 +4,7 @@ MAINTAINER otiai10 <otiai10@gmail.com>
 
 RUN apt-get -qq update
 RUN apt-get install -y libleptonica-dev libtesseract-dev tesseract-ocr
+RUN apt-get install tesseract-ocr-chi-sim
 
 ADD . /go/src/github.com/otiai10/ocrserver
 WORKDIR /go/src/github.com/otiai10/ocrserver

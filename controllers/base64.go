@@ -56,7 +56,7 @@ func Base64(w http.ResponseWriter, r *http.Request) {
 	tempfile.Write(b)
 
 	// TODO: refactor gosseract
-	body.Languages = "eng"
+	body.Languages = "eng+chi_sim"
 
 	result := gosseract.Must(gosseract.Params{
 		Src:       tempfile.Name(),

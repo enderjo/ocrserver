@@ -53,7 +53,7 @@ func FileUpload(w http.ResponseWriter, r *http.Request) {
 
 	result := gosseract.Must(gosseract.Params{
 		Src:       tempfile.Name(),
-		Languages: "eng",
+		Languages: "eng+chi_sim",
 		Whitelist: whitelist,
 	})
 
